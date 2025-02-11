@@ -1,16 +1,17 @@
-# olimpia
+# Olimpia - Aplicativo de Olímpiadas estudantis
 
-A new Flutter project.
+Este é um projeto desenvolvido em **Flutter** que tem como objetivo fornecer detalhes sobre várias olimpíadas de conhecimento para estudantes. O aplicativo permite que os usuários visualizem informações como períodos de inscrição, quem pode participar, como funciona a competição, materiais permitidos durante as provas e outros detalhes específicos de cada olimpíada.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- Visualização de informações detalhadas sobre várias olimpíadas.
+- Inclusão de diferentes olimpíadas com detalhes específicos sobre inscrição, participantes e como funciona cada competição.
+- Interface simples e responsiva com funcionalidades interativas, como a visualização de perguntas frequentes.
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologias Utilizadas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: Framework para desenvolvimento de aplicativos móveis.
+- **Dart**: Linguagem de programação usada para criar o aplicativo.
+- **Git**: Controle de versão para gerenciamento do código fonte.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
