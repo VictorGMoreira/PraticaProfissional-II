@@ -186,7 +186,7 @@ else if(pergunta =="Texto explicativo sobre as fases."){
  
 
 
-    showDialog(
+      showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
@@ -205,6 +205,48 @@ else if(pergunta =="Texto explicativo sobre as fases."){
     );
   }
 
+  // Função para retornar a imagem correspondente com base no título
+  String _obterImagemOlimpiada(String titulo) {
+    switch (titulo) {
+    case "QUIMENINAS":
+      return 'assets/imagens/Quimeninas.jpg';
+    case "Torneio de Física para Meninas (TFM)":
+      return 'assets/imagens/TorneioDeFísicaParaMeninas.jpg';
+    case "Olimpíada brasileira de Biotecnologia (OBBiotec)":
+      return 'assets/imagens/OlimpíadaBrasileiradeBiotecnologia.jpg';
+    case "Olimpíada Nacional de História do Brasil (ONHB)":
+      return 'assets/imagens/OlimpíadaNacionaldeHistóriadoBrasil.jpg';
+    case "Olimpíada de Ciências Humanas do Estado do Ceará (OCHE)":
+      return 'assets/imagens/OlimpíadadeCiênciasHumanasdoEstadodoCeará.jpg';
+    case "Olimpíada Brasileira de Geografia (OBG)":
+      return 'assets/imagens/OlimpíadaBrasileiradeGeografia.jpg';
+    case "Olimpíada Brasileira de Astronomia (OBA)":
+      return 'assets/imagens/OlimpíadaBrasileiradeAstronomia.jpg';
+    case "Olimpíada Brasileira de Informática (OBI)":
+      return 'assets/imagens/OlimpíadaBrasileiradeInformática.jpg';
+    case "Olimpíada Brasileira de Física das Escolas Públicas (OBFEP)":
+      return 'assets/imagens/OlimpíadaBrasileiradeFísicadasEscolasPúblicas.jpg';
+    case "Olimpíada Cearense de Química (OCQ)":
+      return 'assets/imagens/OlimpíadaCearensedeQuímica.jpg';
+    case "Olimpíada Nacional de Ciências (ONC)":
+      return 'assets/imagens/OlimpíadaNacionaldeCiências.jpg';
+    case "Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP)":
+      return 'assets/imagens/OlimpíadaBrasileiradeMatemáticadasEscolasPúblicas.jpg';
+    case "Olimpíada Brasileira de Robótica (OBR)":
+      return 'assets/imagens/OlimpíadaBrasileiradeRobótica.jpg';
+    case "Canguru Matemática":
+      return 'assets/imagens/CanguruMatemática.jpg';
+    case "Olimpíada Brasileira de Física (OBF)":
+      return 'assets/imagens/OlimpíadaBrasileiradeFísica.jpg';
+    case "Olimpíada de Química de Escolas Públicas (OQEP)":
+      return 'assets/imagens/OlimpíadadeQuímicadeEscolasPúblicas.jpg';
+    case "Olimpíada Brasileira de Geopolítica (OBGP)":
+      return 'assets/imagens/OlimpíadaBrasileiradeGeopolítica.jpg';
+    default:
+      return 'assets/imagens/default.jpg';  // Imagem padrão caso não encontre a olimpíada
+  }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -215,13 +257,13 @@ else if(pergunta =="Texto explicativo sobre as fases."){
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Exibindo a imagem do asset
+          // Exibindo a imagem correspondente à olimpíada
           Container(
             height: 200, // Altura do retângulo
             width: double.infinity, // Largura ocupando toda a tela
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/imagens/minha_imagem.png'), // Caminho da imagem
+                image: AssetImage(_obterImagemOlimpiada(titulo)), // Caminho da imagem baseado no título
                 fit: BoxFit.cover, // Ajusta a imagem para cobrir o retângulo
               ),
             ),

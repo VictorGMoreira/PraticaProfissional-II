@@ -8,7 +8,7 @@ class NoticiasScreen extends StatelessWidget {
       "categoria": "Olimpíadas de Química",
       "horario": "Há 3 horas",
       "local": "Em Site Oficial",
-      "imagem": "assets/images/quimica.jpg",
+      "imagem": "assets/imagens/Quimeninas.jpg",
       "url": "https://www.quimeninas.com.br" // Exemplo de URL
     },
     {
@@ -16,7 +16,7 @@ class NoticiasScreen extends StatelessWidget {
       "categoria": "Olimpíadas de Matemática",
       "horario": "Há 5 horas",
       "local": "Em OBMEP",
-      "imagem": "assets/images/matematica.jpg",
+      "imagem": "assets/imagens/OlimpíadaBrasileiradeMatemáticadasEscolasPúblicas.jpg",
       "url": "https://www.obmep.org.br" // Exemplo de URL
     },
     {
@@ -24,7 +24,7 @@ class NoticiasScreen extends StatelessWidget {
       "categoria": "Olimpíadas de Física",
       "horario": "Há 8 horas",
       "local": "Em OBF",
-      "imagem": "assets/images/fisica.jpg",
+      "imagem": "assets/imagens/OlimpíadaBrasileiradeFísica.jpg",
       "url": "https://www.obf.org.br" // Exemplo de URL
     },
     {
@@ -32,7 +32,7 @@ class NoticiasScreen extends StatelessWidget {
       "categoria": "Olimpíadas de Robótica",
       "horario": "Há 1 dia",
       "local": "Em OBR",
-      "imagem": "assets/images/robotica.jpg",
+      "imagem": "assets/imagens/OlimpíadaBrasileiradeRobótica.jpg",
       "url": "https://www.obr.org.br" // Exemplo de URL
     },
     {
@@ -40,7 +40,7 @@ class NoticiasScreen extends StatelessWidget {
       "categoria": "Olimpíadas de Astronomia",
       "horario": "Há 2 dias",
       "local": "Em OBA",
-      "imagem": "assets/images/astronomia.jpg",
+      "imagem": "assets/imagens/OlimpíadaBrasileiradeAstronomia.jpg",
       "url": "https://www.astro.org.br" // Exemplo de URL
     }
   ];
